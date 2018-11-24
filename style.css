@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto-Regular,helvetica,arial,sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Allura';
+    src: url('./fonts/Allura.ttf');
+}
+/*body{
+    background-image: url('./photos/woodGrain.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+html,body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#container{
+    background-color: rgb(189, 152, 152);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 100vh;
+    width: 100vw;
+}
+#displayContainer{
+    background: rgb(0, 0, 0);
+    display: flex;
+    height: 32.6vh;
+    width: 100vw;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#results{
+    color: rgb(243, 243, 243);
+    font-size: 80px;
+    font-family:  Roboto-Regular,helvetica,arial,sans-serif;
+    height: 80px;
+    padding-right: 20px;
+}
+#numbersContainer{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 450px;
+    width: 75%;
+}
+#operandContainer{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 450px;
+    width: 25%;
+}
+#btn{
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgba(244, 244, 244, 1);
+    border-radius: 1px;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+#equals{
+    border: 1px solid rgba(74, 139, 246, 1);
+    border-radius: 1px;
+    background-color: rgba(74, 139, 246, 1);
+    color: #fefefe;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+#operand, #clear{
+    background-color: rgb(223, 155, 67);
+    border: 1px solid rgb(223, 155, 67);
+    color: rgba(68, 68, 68, 1);
+    flex-basis: 88px;
+    flex-grow: 1;
+}
+
+/* Pseudo classes */
+#btn:hover{
+    background-color: rgba(219, 219, 219, 1);
+}
+#btn:active{
+    background-color: rgba(194, 194, 194, 1);
+}
+#equals:hover{
+    background-color: rgba(26, 110, 244, 1);
+}
+#equals:active{
+    background-color:rgba(10, 86, 209, 1);
+}
+#operand:hover, #clear:hover{
+    background-color: rgba(186, 186, 186, 1);
+}
+#operand:active, #clear:active{
+    background-color: rgba(161, 161, 161, 1);
+}
