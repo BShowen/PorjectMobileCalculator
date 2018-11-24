@@ -10,12 +10,12 @@
     font-family: 'Allura';
     src: url('./fonts/Allura.ttf');
 }
-/*body{
+body{
     background-image: url('./photos/woodGrain.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}*/
+}
 html,body{
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +44,7 @@ html,body{
     font-family:  Roboto-Regular,helvetica,arial,sans-serif;
     height: 80px;
     padding-right: 20px;
+    padding-bottom: 10px;
 }
 #numbersContainer{
     align-items: stretch;
